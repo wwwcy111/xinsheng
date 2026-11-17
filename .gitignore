@@ -1,0 +1,30 @@
+# Python
+backend/.venv/
+**/__pycache__/
+*.py[cod]
+backend/xinsheng.db
+backend/uploads/
+.pytest_cache/
+
+# Node
+frontend/node_modules/
+frontend/dist/
+frontend/.env.local
+
+# 环境变量
+.env
+*.local
+
+# 系统与工具
+.DS_Store
+Thumbs.db
+cloudflared/
+public-qrcode.png
+.tools/
+.tools_*.py
+.tools_*.json
+.codeartsdoer/
+.merkle-snapshot.json
+
+# 提交材料（按需保留）
+submit/
