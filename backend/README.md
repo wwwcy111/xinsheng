@@ -125,7 +125,15 @@ pip install pymysql
 
 建表脚本见项目根目录 `sql/schema.sql`。演示环境也可由程序自动建表。
 
-## 七、目录说明
+## 七、云端部署（Render）
+
+后端已配套 `render.yaml`，可在 Render 通过 Blueprint 一键部署（免费实例、新加坡区域）。
+完整步骤、前端对接与验收清单见项目根目录 `docs/deploy.md`。
+
+部署完成后接口地址形如 `https://xinsheng-api.onrender.com/api/v1`，
+健康检查：`https://xinsheng-api.onrender.com/api/v1/health`。
+
+## 八、目录说明
 
 ```text
 backend/
