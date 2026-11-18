@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+*.pyc
+*.db
+uploads/*
+app/static/cache/*
+.env
+*.md
+local_test.py
+smoke_test.py
+sync_check.py
