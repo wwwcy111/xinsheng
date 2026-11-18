@@ -36,7 +36,8 @@ jobs:
         working-directory: frontend
         env:
           VITE_BASE: /${{ github.event.repository.name }}/
-          VITE_API_BASE: ${{ vars.VITE_API_BASE }}
+          # 仓库变量优先；未配置时回退到 CloudBase 云托管默认域名，避免请求打到 Pages 自身
+          VITE_API_BASE: ${{ vars.VITE_API_BASE || 'https://xinsheng-api-350083-13-1412340654.sh.run.tcloudbase.com/api/v1' }}
         run: npm run build
 
       - name: SPA fallback
